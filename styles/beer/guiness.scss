@@ -1,0 +1,162 @@
+.beer-main-container {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  max-width: 1500px;
+}
+.guiness-zero {
+  @media screen and (min-width: 1250px) and (max-width: 1450px) {
+    padding: 60px;
+  }
+  .beer-comp1 {
+    margin-top: 160px;
+
+    .image-holder1 {
+      width: 100%;
+      height: 700px;
+      opacity: 0.7;
+    }
+
+    .image-holder2 {
+      width: 100%;
+      height: 350px;
+      opacity: 0.7;
+    }
+  }
+
+  .beer-comp2 {
+    justify-content: space-between;
+    transform: translate(0, -14%);
+
+    .content-holder1 {
+      .head {
+        max-width: 100%;
+        font-size: 44px;
+        line-height: normal;
+        letter-spacing: 1.632px;
+        color: white;
+        font-family: goatham65;
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: 40px;
+      }
+
+      .para {
+        font-size: 16px;
+        font-family: goatham65;
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 20px;
+        max-width: 70%;
+        padding: 7px;
+      }
+    }
+
+    .content-holder2 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      p {
+        margin: 0 !important;
+      }
+
+      .content {
+        margin-bottom: 20px;
+
+        .head {
+          font-size: 24px;
+          max-width: 100%;
+          line-height: normal;
+          letter-spacing: 1.632px;
+          color: white;
+          font-family: goatham65;
+          font-style: normal;
+          font-weight: 600;
+        }
+
+        .para {
+          font-size: 16px;
+          font-family: goatham65;
+          font-style: normal;
+          font-weight: 400;
+          color: white;
+          margin-bottom: 20px;
+          max-width: 60%;
+          padding: 7px;
+        }
+      }
+    }
+  }
+
+  .beer-comp3 {
+    p {
+      margin: 0 !important;
+    }
+
+    .image-holder {
+      width: 100%;
+      height: 600px;
+    }
+
+    .nutritional-facts {
+      .content-holder {
+        margin-bottom: 60px;
+
+        .label {
+          color: white;
+          font-size: 24px;
+          line-height: normal;
+          font-family: goatham65;
+          margin-bottom: 5px;
+        }
+
+        .value {
+          color: white;
+          font-size: 16px;
+          line-height: normal;
+          font-family: goatham65;
+        }
+      }
+    }
+
+    .ingredients-holder {
+      .heading {
+        color: white;
+        font-size: 40px;
+        line-height: normal;
+        font-family: goatham65;
+        margin-top: 50px;
+      }
+
+      .ingredients {
+        p {
+          color: white;
+          font-size: 18px;
+          line-height: normal;
+          font-family: goatham65;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .ingredients-content {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      .para {
+        transform: translate(0, -45%);
+        font-size: 18px;
+        font-family: goatham65;
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 20px;
+        max-width: 60%;
+        padding: 60px;
+        background-color: black;
+      }
+    }
+  }
+}

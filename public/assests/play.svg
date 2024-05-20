@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="170px" height="170px" aria-labelledby="title-play-pause-cca0ecd7-2df3-4472-900f-dce7ac003d39 desc-play-pause-cca0ecd7-2df3-4472-900f-dce7ac003d39" role="img" viewBox="0 0 100 100">
+	<title id="title-play-pause-cca0ecd7-2df3-4472-900f-dce7ac003d39">Video Play Button</title>
+	<desc id="desc-play-pause-cca0ecd7-2df3-4472-900f-dce7ac003d39">Click here to play video</desc>
+	<g transform="translate(-1016 -309)">
+		<path d="M33.156-18.227,5.656-34.484A3.729,3.729,0,0,0,0-31.258V1.25A3.747,3.747,0,0,0,5.656,4.477l27.5-16.25A3.746,3.746,0,0,0,33.156-18.227Z" transform="translate(1049 374)" fill="white"></path>
+	</g>
+</svg>

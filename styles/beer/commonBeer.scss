@@ -1,0 +1,56 @@
+.common-beer-main {
+    width: 100%;
+    margin-top:40px;
+    .common-beer-inner {
+        .head {
+            p {
+                margin-left: 7%;
+                font-size: 1rem !important;
+            }
+        }
+    }
+
+    .common-beer-image-holder {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 90%;
+            height: 300px;
+        }
+    }
+
+    .hover-content-holder {
+        width: 100%;
+        .content-row {
+            justify-content: space-between;
+            width: 100%;
+            h1 {
+                font-size: 60px;
+                font-weight:700;
+                max-width:700px;
+            }
+            transform: translate(0%, -10%);
+            margin-left: 7%;
+
+            @media screen and (min-width:280px) and (max-width:600px) {
+                // transform: translate(0, -14%);
+                flex-direction: column;
+            }
+        }
+
+        .para {
+            .content {
+                padding: 30px;
+                max-width: 650px;
+                background-color: black;
+
+                @media screen and (min-width:280px) and (max-width:600px) {
+                    width: 100%;
+                    padding: 0px;
+                }
+
+            }
+        }
+    }
+}

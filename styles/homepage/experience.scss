@@ -1,0 +1,114 @@
+.experience-main-container {
+    min-width: 100%;
+    padding: 25px;
+    height: 105vh;
+    
+    @media screen and (min-width:280px) and (max-width:600px){
+        padding:0;
+        height: auto;
+    }
+
+    // @media screen and (min-width:280px) and (max-width:600px){
+    //     flex-direction: column-reverse;
+    // }
+    .content {
+        padding: 15px;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .exper-para{
+            width: 70%;
+            color: white;
+        }
+
+        @media screen and (min-width:280px) and (max-width:600px) {
+            max-width: 100%;
+            transform: translate(0, -16%);
+        }
+    }
+
+    .image-holder {
+        max-width: 50%;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width:280px) and (max-width:600px) {
+            padding: 15px;
+            max-width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 81%;
+            filter: opacity(0.8);
+
+            @media screen and (min-width:280px) and (max-width:600px) {
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+    }
+}
+.craft-main-container {
+    min-width: 100%;
+    padding: 25px;
+    height: 90vh;
+    
+    @media screen and (min-width:280px) and (max-width:600px){
+        padding:0;
+        height: auto;
+    }
+
+    // @media screen and (min-width:280px) and (max-width:600px){
+    //     flex-direction: column-reverse;
+    // }
+    .content {
+        padding: 15px;
+        max-width: 50%;
+
+        @media screen and (min-width:280px) and (max-width:600px) {
+            max-width: 100%;
+            transform: translate(0, -16%);
+        }
+    }
+
+    .image-holder {
+        max-width: 50%;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+
+        @media screen and (min-width:280px) and (max-width:600px) {
+            padding: 15px;
+            max-width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            filter: opacity(0.8);
+
+            @media screen and (min-width:280px) and (max-width:600px) {
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+    }
+}
+
+@font-face {
+    src: url('../../public/fonts/goatham65.woff2');
+    font-family: 'goatham65';
+
+}
+
+h1 {
+    font-family: goatham65;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}

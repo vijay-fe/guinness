@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//
+.menu-item-sub-menu:hover {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s;
+}
+.menu-items .menu-item:hover + .menu-item-sub-menu {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s;
+}
+.menu-items .menu-item-sub-menu {
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+//
+@font-face {
+  src: url("../public/fonts/goatham65.woff2");
+  font-family: "goatham65";
+}
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.z-index {
+  z-index: -1;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.background-black {
+  background-color: black;
+  opacity: 1;
+}
+
+h1 {
+  margin: 0;
+  text-indent: 0rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.ant-btn {
+  padding: 0px !important;
+}
+img {
+  object-fit: cover;
+}
+.heading {
+  font-size: 77px;
+  line-height: 80px;
+  letter-spacing: 1.632px;
+  color: white;
+  font-family: goatham65;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 40px;
+  max-width: fit-content;
+  text-wrap: wrap;
+  z-index: 20 !important;
+
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    font-size: 30px !important;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: normal;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 899px) {
+    font-size: 40px !important;
+    line-height: 50px;
+  }
+
+  @media screen and (min-width: 900px) and (max-width: 1250px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.p-content {
+  font-size: 18px;
+  /* line-height: 24px; */
+  /* letter-spacing: 2.4px; */
+  font-family: goatham65;
+  font-style: normal;
+  font-weight: 200;
+  color: white;
+  margin-bottom: 20px;
+  max-width: 355px;
+  padding: 7px 8px;
+
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    font-size: 12px !important;
+    margin-bottom: 15px;
+    max-width: 511px;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 899px) {
+    font-size: 14px !important;
+  }
+
+  @media screen and (min-width: 900px) and (max-width: 1250px) {
+    font-size: 16px;
+  }
+}
+
+.ant-btn-default {
+  background-color: black;
+  border: none;
+}
+.w-100 {
+  width: 93% !important;
+}
+
+.find-out-btn {
+  background: black !important;
+  color: #a09829 !important;
+  font-size: 20px;
+  font-weight: 700 !important;
+  height: 54px !important;
+  width: 168px;
+  margin-bottom: 20px !important;
+  font-family: sans-serif !important;
+  background: transparent !important;
+  border: none !important;
+  text-transform: capitalize !important;
+
+  &:hover {
+    color: white !important;
+    border: none !important;
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    font-size: 15px !important;
+  }
+
+  @media screen and (min-width: 900px) and (max-width: 1250px) {
+    font-size: 18px;
+  }
+}
+
+.margin-b160 {
+  margin-bottom: 160px;
+
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    margin-bottom: 40px !important;
+  }
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+  background-color: black;
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    margin-bottom: 0px !important;
+    background-color: black;
+  }
+}
+
+.p15-left {
+  @media screen and (min-width: 280px) and (max-width: 600px) {
+    padding-left: 15px !important;
+  }
+}
+
+.p-80 {
+  padding-bottom: 80px;
+}
+
+#faq{
+  scroll-behavior: smooth !important;
+}
