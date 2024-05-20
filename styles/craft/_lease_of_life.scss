@@ -1,0 +1,40 @@
+.the_lease_of_life_continer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+    .body_section{
+        padding: 2rem 0 0 2rem;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: justify;
+        width: 90%;
+        margin-top: -4rem;
+        background-color: black;
+
+        .body_content{
+            p{
+                margin: 1.25rem 0;
+                &:is(:first-child,:last-child){
+                    margin: unset;
+                }
+            }
+            
+        }
+    }
+
+    @media (width < 1024px) {
+        align-items: flex-start;
+        .body_section{
+            padding: 2rem 2rem 0 2rem;
+        }
+    }
+    @media (width < 768px) {
+        align-items: center;
+        margin: unset;
+        .body_section{
+            width: 100%;
+            padding: 2rem 2rem 0 2rem;
+        }
+    }
+}

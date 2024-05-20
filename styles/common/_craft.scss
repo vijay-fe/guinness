@@ -1,0 +1,189 @@
+.craft_box_k1_wrapper{
+    width: 100%;
+    .craft_box_k1_image{
+        width: 100%;
+    }
+    .craft_box_k1_content{
+        width: 100%;
+        margin-top: -3rem;
+        padding-inline: 4rem;
+        .craft_bolx_k1_content_inner{
+            width: 60%;
+
+        }
+        .craft_box_k1_heading{
+            text-indent: 1.5rem;
+            margin-bottom: 2.5rem;
+            font-size: 44px;
+            font-weight: 700;
+        }
+        .craft_box_k1_para{
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+    }
+
+    @media (768px <= width <= 1024px )  {
+        .craft_box_k1_content{
+
+            .craft_box_k1_heading{
+                font-size: 40px;
+                margin-bottom: 1.5rem;
+            }
+            .craft_box_k1_para{
+                font-size: 1rem;
+            }
+        }
+    }
+    @media (width <= 768px )  {
+        .craft_box_k1_content{
+            padding-inline: 2rem;
+            .craft_bolx_k1_content_inner{
+                width: 100%;
+            }
+            .craft_box_k1_heading{
+                font-size: 32px;
+                text-indent: 0;
+                text-wrap: stable;
+            }
+        }
+    }
+}
+
+
+/*======== common carft box styles =========*/
+.craft_box_common_wrapper{
+    width: 90%;
+    margin:0 3rem auto;
+    // max-height: 700px;
+    position: relative;
+    .craft_box_common_title_scope{
+        line-height: 1.2;
+        letter-spacing: 2.4px;
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 36px;
+        font-weight: 700;
+    }
+
+    .craft_box_common_image{
+        position: relative;
+        .craft_box_common_heading_fall{
+            display: none;
+            @extend .craft_box_common_title_scope;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            max-height: 560px;
+            margin-bottom: 4rem;
+            filter: opacity(0.7);
+        }
+    } 
+    
+    .craft_box_common_content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 0%;
+        h2{
+            flex: 1 0 65%;
+            font-size: 64px;
+            text-indent: 2.5rem;
+            line-height: 1;
+            letter-spacing: 5.632px;
+            font-weight: 700;
+        }
+        .content_box{
+            
+            flex: 0 1 35%;
+            background-color: black;
+            padding: 2.5rem 2.5rem 0 2.5rem;
+            p{
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            .find-out-btn{
+                text-align: justify;
+            }
+        }
+    }
+
+    @media (width <= 1024px) {
+        
+        .craft_box_common_content{
+            position: relative;
+            h2{
+                flex: auto;
+                display: none;
+            }
+            .content_box{
+                flex: auto;
+            }
+        }
+        .craft_box_common_image{
+            .craft_box_common_heading_fall{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                margin-bottom: 10px;
+                font-size: 40px;
+            }
+        } 
+    }
+
+
+    @media (768px <= width <= 1024px )  {
+        .craft_box_common_content{
+            flex-direction: column;
+            align-items: flex-start;
+            h2{
+                font-size: 40px;
+            }
+            .content_box{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .craft_box_common_image{
+            img{
+                height: 560px;
+                margin: 0;
+            }
+        }
+    }
+
+    @media (width <= 768px )  {
+        .craft_box_common_content{
+            flex-direction: column;
+            align-items: flex-start;
+            h2{
+                font-size: 40px;
+            }
+            .content_box{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .craft_box_common_image{
+            img{
+                height: 460px;
+                margin: 0;
+            }
+        }
+    }
+
+    @media (width <= 376px){
+        .craft_box_common_image{
+
+            .craft_box_common_heading_fall{
+                font-size: 32px;
+            }
+        }
+    }
+}

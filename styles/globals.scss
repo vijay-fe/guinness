@@ -8,11 +8,13 @@
   pointer-events: all;
   transition: 0.5s;
 }
-.menu-items .menu-item:hover + .menu-item-sub-menu {
+
+.menu-items .menu-item:hover+.menu-item-sub-menu {
   opacity: 1;
   pointer-events: all;
   transition: 0.5s;
 }
+
 .menu-items .menu-item-sub-menu {
   opacity: 0;
   transition: 0.3s;
@@ -24,6 +26,7 @@
   src: url("../public/fonts/goatham65.woff2");
   font-family: "goatham65";
 }
+
 body {
   margin: 0;
   scroll-behavior: smooth;
@@ -70,9 +73,11 @@ h1 {
 .ant-btn {
   padding: 0px !important;
 }
+
 img {
   object-fit: cover;
 }
+
 .heading {
   font-size: 77px;
   line-height: 80px;
@@ -135,6 +140,7 @@ img {
   background-color: black;
   border: none;
 }
+
 .w-100 {
   width: 93% !important;
 }
@@ -197,6 +203,7 @@ img {
 .mb-80 {
   margin-bottom: 80px;
   background-color: black;
+
   @media screen and (min-width: 280px) and (max-width: 600px) {
     margin-bottom: 0px !important;
     background-color: black;
@@ -213,6 +220,10 @@ img {
   padding-bottom: 80px;
 }
 
-#faq{
+#faq {
+  scroll-behavior: smooth !important;
+}
+
+html {
   scroll-behavior: smooth !important;
 }

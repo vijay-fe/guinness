@@ -1,0 +1,77 @@
+{
+    "guinness_story" : [
+        {
+            "id": "the-ease-of-life",
+            "label": "The Lease Of Life"
+        },
+        {
+            "id": "the-harp",
+            "label": "The Harp"
+        },
+        {
+            "id": "hows-that-for-quality",
+            "label": "How's That For Quality?"
+        },
+        {
+            "id": "never-settle",
+            "label": "Never Settle"
+        },
+        {
+            "id": "guinness-in-africa",
+            "label": "Guinness In Africa"
+        }
+    
+    ],
+
+    "guinness_advertising": [
+        {
+            "id": "John-gilroy",
+            "label": "John Gilroy"
+        },
+        {
+            "id": "guinness-sapeurs",
+            "label": "Guinness “Sapeurs”"
+        },
+        {
+            "id": "liberty-fields",
+            "label": "Liberty Fields: Guinness Rugby"
+        },
+        {
+            "id": "advertising-in-africa",
+            "label": "Advertising In Africa"
+        }
+    ],
+
+    "guinness_innovation":  [
+        { 
+            "id": "GUINNESS NITROSURGE", 
+            "label": "Guinness Nitrosurge" 
+        },
+        { 
+            "id": "GUINNESS MICRODRAUGHT", 
+            "label": "Guinness MicroDraught" 
+        },
+        { 
+            "id": "GUINNESS 0.0", 
+            "label": "Guinness 0.0" 
+        },
+        { 
+            "id": "MICHAEL ASH", 
+            "label": "Michael Ash" 
+        },
+        { 
+            "id": "THE WIDGET", 
+            "label": "The Widget" 
+        }
+    ],
+    "guinness_microdraught": [
+        { 
+            "id": "the-science-behind-the-pour", 
+            "label": "The Science Behind The Pour" 
+        },
+        { 
+            "id": "microdraught-at-home", 
+            "label": "MicroDraught At Home" 
+        }
+    ]
+}

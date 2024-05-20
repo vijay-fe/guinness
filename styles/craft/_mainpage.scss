@@ -1,0 +1,65 @@
+.craft_main_container{
+    width:100%;
+    max-width:1400px;
+    margin-inline: auto;
+    position: relative;
+    color: white;
+    font-family: "gotham65";
+    &>div{
+        margin-inline: auto;
+    }
+        .mobile_tab_navigator{
+            display: none;
+            background-color: #000;
+            z-index: 99999;
+            width: 100%;
+        }
+
+    .craft_main_section{
+        position: relative;
+        padding: 4rem 2rem 0 0;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 2rem;
+        margin-bottom: 4rem;
+        .mobile_tab_navigator{
+            display: none;
+        }
+
+        .craft_left_section{
+            grid-area: 1/1/2/4;
+
+            .side_section_box_container{
+                top: 13rem;
+                position: sticky;
+            }
+        }
+
+        .craft_right_section{
+            grid-area: 1/4/2/13;
+            scroll-behavior: smooth;
+        }
+    }
+
+    @media (width <= 768px) {
+        .mobile_tab_navigator{
+            display: block;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .craft_main_section{
+            padding: unset;
+            gap: 0;
+            .craft_left_section{
+                display: none;
+                grid-area: unset;
+            }
+
+            .craft_right_section{
+                grid-area: 1/1/2/13;
+            }
+
+        }
+    }
+}

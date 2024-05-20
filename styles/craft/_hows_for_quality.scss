@@ -1,0 +1,141 @@
+.in-container {
+    margin-bottom: 2rem;
+  
+    @media (min-width: 1024px) {
+      margin-bottom: 7.5rem;
+    }
+  }
+  
+  .title-wrapper {
+    position: relative;
+    z-index: 30;
+    margin-bottom: -8px;
+    width: 58.333333%;
+
+    @media (width < 1024px) {
+        width: 83.333333%;
+    }
+  }
+  
+  .title {
+    font-weight: 700;
+    color: white;
+    line-height: 1.25;
+    text-transform: uppercase;
+    font-size: 32px;
+    @media (min-width: 1024px) {
+        font-size: 3rem;
+        display: block;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 4rem;
+      margin-bottom: 2rem;
+    }
+    @media (width < 1024px) {
+        padding-inline: 2rem;
+        margin-bottom: 1rem;
+    }
+  }
+  
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100%;
+    width: 100%;
+  
+    @media (min-width: 1024px) {
+      flex-direction: row-reverse;
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  .image-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+  
+    @media (min-width: 1024px) {
+      flex: 1;
+      margin-left: -5rem;
+    }
+  
+    @media (min-width: 1280px) {
+      margin-left: -16rem;
+    }
+  }
+  
+  .image-container {
+    aspect-ratio: 16 / 12;
+    background: linear-gradient(to bottom, #000, #fff);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+  }
+  
+  .image-span {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+  }
+  
+  .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    object-fit: cover;
+    color: transparent;
+  
+    @media (min-width: 1024px) {
+      object-fit: cover;
+    }
+  }
+  
+  .text-wrapper {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    margin-top: 0;
+  
+    @media (min-width: 1024px) {
+      flex-basis: 58.333333%;
+    }
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    @media (min-width: 1024px) {
+      width: 66.666667%;
+      flex-direction: row;
+    }
+  }
+  
+  .text-block {
+    background: black;
+    padding-top: 2rem;
+    padding-right: 0;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+    @media (min-width: 1024px) {
+      padding-top: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+  

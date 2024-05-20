@@ -1,0 +1,133 @@
+.parallel_flex_box_container {
+    position: relative;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+  
+    @media (min-width: 1024px) {
+      margin-bottom: 96px;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  }
+  
+  .image_container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex: 1;
+    justify-content: flex-end;
+  
+    @media (min-width: 1024px) {
+      margin-left: -5rem;
+    }
+  }
+  
+  .image_figure {
+    aspect-ratio: 3 / 4;
+    background: linear-gradient(to bottom, #160b0e, #000);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  
+    @media (min-width: 768px) {
+      &:before {
+        display: none;
+      }
+    }
+  
+    @media (min-width: 1024px) {
+      margin-left: 0;
+    }
+  
+    .left_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      height: 100%;
+      width: 120px;
+      background-color: black;
+  
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+  
+    .image_span {
+      position: absolute;
+      inset: 0;
+      margin: 0;
+      box-sizing: border-box;
+      display: block;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+    }
+  
+    .image {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      inset: 0;
+      object-fit: cover;
+      color: transparent;
+    }
+  }
+  
+  .text_container {
+    position: relative;
+    z-index: 20;
+    margin-top: -120px;
+    width: 91.666667%;
+    
+    @media (min-width: 1024px) {
+      margin-top: 0;
+      width: 100%;
+      flex-basis: 50%;
+    }
+  
+    .text_content_wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+  
+      @media (min-width: 1024px) {
+        flex-direction: row;
+      }
+    }
+  
+    .text_block {
+      background-color: black;
+      padding: 2.5rem;
+      padding-bottom: 0;
+  
+      @media (min-width: 1024px) {
+        padding-left: 0;
+        padding-right: 2.5rem;
+      }
+  
+      .text_content {
+        p{
+            font-size: 1rem;
+            line-height: 1.5;
+            font-weight: 500;
+            word-spacing: 1px;
+            text-align: justify;
+        }
+        p:is(:not(:first-child, :last-child)){
+            margin: 1.25rem 0;
+        }
+
+        @media (width < 768px){
+            p{
+                word-spacing: 0;
+            }
+        }
+      }
+    }
+  }
+  

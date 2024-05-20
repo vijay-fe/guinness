@@ -1,0 +1,153 @@
+.craft_grid_box_container {
+    position: relative;
+    width: 100%;
+    .craft_box_common_title_mobile{
+        display: none;
+    }
+    .craft_grid_box_content_wrapper {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60%;
+        z-index: 1;
+        padding-left: 2rem;
+
+        h2 {
+            // white-space: nowrap;
+            text-transform: uppercase;
+        }
+
+        .craft_box_common_heading {
+            h2 {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .craft_box_common_title {
+            h2 {
+                font-size: 64px;
+                // text-indent: 2.5rem;
+                line-height: 1;
+                letter-spacing: 5.632px;
+                font-weight: 700;
+            }
+        }
+
+        .craft_box_common_content {
+            width: 56%;
+            padding: 2rem 2rem 0 0;
+
+            .craft_box_common_para {
+                text-indent: .75rem;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            .find-out-btn {
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+                // justify-content: center;
+            }
+        }
+    }
+
+    .craft_grid_box_image_wrapper {
+        img {
+            z-index: -1;
+            filter: opacity(0.7);
+        }
+
+        width: 50%;
+    }
+
+    @media(width <=1024px) {
+        .craft_grid_box_content_wrapper {
+            padding: 0;
+            bottom: 0;
+            transform: translateY(0);
+            display: flex;
+            align-items: flex-end;
+
+            .craft_box_common_heading {
+                h2 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 2rem;
+                    padding-left: 2rem;
+                }
+            }
+
+            .craft_box_common_title {
+                h2 {
+                    font-size: 40px;
+                    line-height: 1;
+                    letter-spacing: 2.6px;
+                    font-weight: 700;
+                    padding-left: 2rem;
+                }
+            }
+
+            .craft_box_common_content {
+                width: 100%;
+                background-color: #000;
+                padding-left: 2rem;
+                .find-out-btn {
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+
+    @media (width <=768px) {
+
+        // padding: 2rem;
+        .dummy {
+            display: none;
+        }
+
+        .craft_grid_box_content_wrapper {
+            width: 100%;
+
+            .craft_box_common_heading {
+                display: none;
+            }
+
+            .craft_box_common_content {
+                padding: 0;
+                padding-inline: 2rem;
+            }
+
+            .craft_box_common_title_scope {
+                padding-left: 2rem;
+            }
+        }
+
+        .craft_grid_box_image_wrapper {
+            width: 100%;
+
+            img {
+                height: 560px;
+            }
+        }
+        .craft_box_common_title_mobile{
+            display: block;
+            h2{
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 700;
+                margin: 0 0 1rem 1rem;
+            }
+        }
+    }
+
+    @media (width <=376px) {
+        .craft_grid_box_content_wrapper {
+            .craft_box_common_heading_fall {
+                font-size: 32px;
+            }
+        }
+    }
+}
